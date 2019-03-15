@@ -52,9 +52,8 @@ bool Donnees::AjouterTache(Tache inTache)
 	while (cpt < maxTaches && ajoutReussi == false) {
 
 		if (lesTaches[cpt] == NULL) {
-			lesTaches[cpt]->setTitre(inTache.getTitre());
-			lesTaches[cpt]->setEtat(inTache.getEtatAvancement());
-			lesTaches[cpt]->setIdentifiant(inTache.getIdentifiant());
+			lesTaches[cpt] = &inTache;
+			
 			ajoutReussi = true;
 		}
 		
