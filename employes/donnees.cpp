@@ -52,7 +52,7 @@ bool Donnees::AjouterTache(Tache inTache)
 	while (cpt < maxTaches && ajoutReussi == false) {
 
 		if (lesTaches[cpt] == NULL) {
-			lesTaches[cpt] = &inTache;
+			lesTaches[cpt] = new Tache (inTache);
 			
 			ajoutReussi = true;
 		}
