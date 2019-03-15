@@ -49,7 +49,7 @@ bool Donnees::AjouterTache(Tache inTache)
 	int cpt = 0;
 	bool ajoutReussi = false;
 	
-	while (cpt < maxTaches & ajoutReussi == false) {
+	while (cpt < maxTaches && ajoutReussi == false) {
 
 		if (lesTaches[cpt] == NULL) {
 			lesTaches[cpt]->setTitre(inTache.getTitre());
